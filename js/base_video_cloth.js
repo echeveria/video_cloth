@@ -51,7 +51,7 @@ VideoCloth.prototype.createVideo = function () {
 }
 var videoEle = document.getElementById('video_tag');
 
-var obj = new VideoCloth({'element': 'videoEle'}).setConfig({'height': 550})
+var obj = new VideoCloth({'element': videoEle}).setConfig({'height': 550})
 
 
 obj.autoConfig();
