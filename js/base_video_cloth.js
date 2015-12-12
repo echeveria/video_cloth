@@ -53,7 +53,8 @@ VideoCloth.prototype.setConfig = function ( newConf ){
     }
 
     return  this;
-}
+};
+
 VideoCloth.prototype.autoConfig = function() {
 
     var defaultConf = {
@@ -64,7 +65,8 @@ VideoCloth.prototype.autoConfig = function() {
 
     this.setConfig(defaultConf);
     return this;
-}
+};
+
 VideoCloth.prototype.createVideoCover = function () {
     var div = document.createElement("div");
     div.style.width = "500px";
@@ -78,7 +80,8 @@ VideoCloth.prototype.createVideoCover = function () {
     var parent = this.config.element.parentNode;
     return parent.insertBefore(div, parent.firstChild);
 
-}
+};
+
 var videoEle = document.getElementById('video_tag');
 
 var obj = new VideoCloth({'element': videoEle}).setConfig({'height': {a:550}})
